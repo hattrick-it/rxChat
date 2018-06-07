@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="LayerChatTest" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="rGe-zW-7Gu" id="gIo-Mp-RWg"/>
+                <outlet property="loginButton" destination="tSL-of-yfI" id="7Qq-V4-gf0"/>
+                <outlet property="passwordTextField" destination="7f7-w8-3GC" id="Tyz-iC-dxp"/>
+                <outlet property="view" destination="iN0-l3-epB" id="olX-3V-Wm7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucx-WV-zLr">
+                    <rect key="frame" x="0.0" y="20" width="375" height="626"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rGe-zW-7Gu" userLabel="Email Text Field">
+                            <rect key="frame" x="20" y="100" width="335" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7f7-w8-3GC" userLabel="Password Text Field">
+                            <rect key="frame" x="20" y="170" width="335" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSL-of-yfI" userLabel="Login Button">
+                            <rect key="frame" x="137" y="240" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="WlZ-Nr-F5z"/>
+                            </constraints>
+                            <state key="normal" title="Sign In"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="tSL-of-yfI" firstAttribute="top" secondItem="7f7-w8-3GC" secondAttribute="bottom" constant="40" id="50t-k0-M0g"/>
+                        <constraint firstItem="tSL-of-yfI" firstAttribute="centerX" secondItem="7f7-w8-3GC" secondAttribute="centerX" id="6XL-Y5-njM"/>
+                        <constraint firstAttribute="trailing" secondItem="7f7-w8-3GC" secondAttribute="trailing" constant="20" id="Kti-Tb-LM2"/>
+                        <constraint firstAttribute="trailing" secondItem="rGe-zW-7Gu" secondAttribute="trailing" constant="20" id="OrK-Gq-B7Q"/>
+                        <constraint firstItem="rGe-zW-7Gu" firstAttribute="leading" secondItem="Ucx-WV-zLr" secondAttribute="leading" constant="20" id="f41-Ab-URD"/>
+                        <constraint firstItem="7f7-w8-3GC" firstAttribute="top" secondItem="rGe-zW-7Gu" secondAttribute="bottom" constant="40" id="rrA-lX-cc2"/>
+                        <constraint firstItem="rGe-zW-7Gu" firstAttribute="top" secondItem="Ucx-WV-zLr" secondAttribute="top" constant="100" id="unq-zz-EFW"/>
+                        <constraint firstItem="7f7-w8-3GC" firstAttribute="leading" secondItem="Ucx-WV-zLr" secondAttribute="leading" constant="20" id="y2C-lb-Fd3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ucx-WV-zLr" secondAttribute="trailing" id="Fq5-x8-PMT"/>
+                <constraint firstItem="Ucx-WV-zLr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QQu-65-4ca"/>
+                <constraint firstItem="Ucx-WV-zLr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Syj-rO-VXN"/>
+                <constraint firstItem="Ucx-WV-zLr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eNc-kZ-Rki"/>
+                <constraint firstItem="Ucx-WV-zLr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vxC-pv-SA1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

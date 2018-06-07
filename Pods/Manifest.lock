@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (4.7.1)
+  - LayerKit (4.0.0)
+  - MessageKit (1.0.0-beta.1)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Result (3.2.4)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SwiftDate (4.5.1)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - LayerKit
+  - MessageKit (from `../../../Downloads/MessageKit-master/`)
+  - Moya/RxSwift (~> 11.0)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SwiftDate
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - LayerKit
+    - Moya
+    - Result
+    - RxCocoa
+    - RxSwift
+    - SwiftDate
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  MessageKit:
+    :path: "../../../Downloads/MessageKit-master/"
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  LayerKit: 865c5fb9faaaf4fc785c910a8e66fcdef39ba771
+  MessageKit: f7439b37af9c4bccd907fb3db01d96fd892c3c82
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 2f85a2bac334378eb671fbfcb143725e42ec1730
+
+COCOAPODS: 1.5.0
